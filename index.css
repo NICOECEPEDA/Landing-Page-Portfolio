@@ -101,6 +101,10 @@ h2 {
  display: flex;
 }
 
+.camion3 {
+    border-radius: 50%;
+}
+
 .parrafo1{
     font-size: 20px;
     display: inline-block;
