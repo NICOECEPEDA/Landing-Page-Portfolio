@@ -37,7 +37,7 @@ body {
 
 
 .menu .inicio {
-    color: gold;
+    color: red;
 }
 
 .menu li:hover {
@@ -47,7 +47,7 @@ body {
 }
 
 h2 {
-    color: gold;
+    color: red;
     font-size: 2.5vw
 }
 
@@ -66,7 +66,7 @@ h2 {
     margin-top: 15px;
     border-radius: 20px;
     border: none;
-    background-color: gold;
+    background-color: red;
     font-family: 'Koulen', cursive;
     cursor: pointer;
 }
@@ -87,6 +87,56 @@ h2 {
 }
 
 .texto {
-    margin-top: 30px;
-    margin-left: 80vh;
+    margin-left: 50vh;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
+.service {
+ text-align: center;
+ padding: 40px 40px 40px 40px;
+ margin-left: 80vh;
+ display: flex;
+}
+
+.parrafo1{
+    font-size: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.parrafo2 {
+    font-size: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
+.camioncito {
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 30px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+.garage {
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 90px;
+}
+
