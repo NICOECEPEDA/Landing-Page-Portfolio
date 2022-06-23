@@ -5,142 +5,235 @@
     box-sizing: border-box;
 }
 
-
 body { 
-    font-family: 'Koulen', cursive;
+    font-family: 'Fjalla One', sans-serif;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: whitesmoke
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
+.titulo {
+    color: crimson;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-.navbar {
+header {
+    width: 100%;
+    height: 600px;
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92c276e), url(/fotos/deposito.jpg);
+ /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92c276e), url(/fotos/deposito.jpg); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: whitesmoke;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header {
     display: flex;
-    justify-content: space-between;
-    padding: 2em;
+    height: 430px;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
+.textos-header h1{
+   font-size: 50px; 
+   color: whitesmoke;
 }
 
-.menu li {
-    list-style: none;
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 350;
+    color: whitesmoke;
 }
 
-
-.menu .inicio {
-    color: red;
-}
-
-.menu li:hover {
-    background-color: coral;
-    transition: ease-in .5s;
-    cursor: pointer;
-}
-
-h2 {
-    color: red;
-    font-size: 2.5vw
-}
-
-.main {
-    margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-.contacto { 
-   
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 20px;
-    border: none;
-    background-color: red;
-    font-family: 'Koulen', cursive;
-    cursor: pointer;
-}
-
-.sobre {
-    display: grid;
-    width: 50vw;
-}
-
-.leer {
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 20px;
-    border: none;
-    background-color: gold;
-    font-family: 'Koulen', cursive;
-    cursor: pointer;
-}
-
-.texto {
-    margin-left: 50vh;
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
+.wave {
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
-.service {
- text-align: center;
- padding: 40px 40px 40px 40px;
- margin-left: 80vh;
- display: flex;
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.camion3 {
+.imagen-about-us{
+    width: 45%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 45%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: red;
+    color: azure;
     border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 black;
+    margin-right: 5px;
 }
 
-.parrafo1{
-    font-size: 20px;
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: column;
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.portafolio{
+    background: gainsboro;
+}
+
+.galeria-port{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 black;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: grey;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 black;
+}
+
+.cards .card img{
+    width: 100px;   
+    height: 100px;
+    object-fit: fill;
+    border: whitesmoke;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+}
+
+
+.parrafo {
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+.about-services{
+    background: white;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
     text-align: justify;
 }
 
-.parrafo2 {
-    font-size: 20px;
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: justify;
+footer{
+    background: rgb(95, 89, 89);
+    padding: 30px 0 10px 0;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 2px solid whitesmoke;
+    margin-top: 10px;
 }
 
 
-.camioncito {
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 40px;
-    font-size: 40px;
-    margin-top: 30px;
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 100px;
+.content-foo h4{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
 }
 
-.garage {
-    align-items: center;
-    justify-content: space-around;
-    font-size: 40px;
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: 90px;
+.content-foo p{
+    color: white;
+    margin-top: 5px;
 }
-

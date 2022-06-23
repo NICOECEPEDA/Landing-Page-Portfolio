@@ -1,58 +1,128 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>TRANSPORTE NA</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8a6f0b1606.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <nav class="navbar">
-                <div>
-                    <h2>NA</h2>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#porque">Acerca de</a>
+            <a href="#work">Portafolio</a>
+            <a href="#clients">Servicios</a>
+            <a href="#foot">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>TRANSPORTE NUEVOS AIRES</h1>
+            <h2>Soluciones en logistica</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C119.92,-7.38 315.74,-28.11 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <a name="porque"></a>
+            <h2 class="titulo">PORQUE ELEGIRNOS</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="/fotos/camion.jpg" alt="camion na" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Experiencia en el rubro</h3>
+                    <p>Más de 20 años en el rubro nos avalan, y todos nuestros clientes vuelven a elegirnos, garantizamos un viaje seguro para tu mercaderia. </p>
+                    <h3><span>2</span>Atencion personalizada</h3>
+                    <p>Evaluamos las necesidades de nuestros clientes y armamos un presupuesto para garantizar la mejor cotizacion del mercado.</p>
                 </div>
-
-                <ul class="menu">
-                    <li class="inicio">INICIO</li>
-                    <li>SERVICIOS</li> 
-                    <li>CLIENTES</li>
-                    <li>CONTACTO</li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <div class="info-content">
-                <h1> Transporte <span> Nuevos Aires   </span></h1>
-                <p>Contamos con un equipo especializado para que el producto llegue a destino en las mejores condiciones evitando que se deteriore en su traslado.<br>
-                     Brindamos asesoramiento a cada cliente para reducir su costo y hacerlo mas rentable.</p>
-                    <button class="contacto">Contactame</button>
             </div>
-            <section>
-            <img class="camioncito" src="fotos/camion.jpg" alt="camion nuevos aires">
-        </main>
-    </div>
-    <div class="sobre">
-        <h2 class="service">Nuestros Servicios</h2>
-        <p class="texto">Todas nuestras unidades cuentan con un sistema avanzado de rastreo satelital y monitoreo para la seguridad de toda la mercadería.</p>
-    </div>
-    <div class="camioncito">
-        <i class="fa-solid fa-truck"></i>
-        <div>
-        <p class="parrafo1">Tenemos todo tipo de unidades para adaptarnos a la necesidad del cliente </p>
-    </div>
-    </div>
-    <div class="garage">
-        <i class="fa-solid fa-warehouse"></i>
-        <div>
-        <p class="parrafo2">Contamos con un deposito de 1500m3, con sistema de stock y atencion personalizada para nuestros clientes</p>
-    </div>
-    </div>
-</section>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <a name="work"></a>
+                <h2 class="titulo">TRABAJOS</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="fotos/plan.jpg" alt="">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="fotos/carga.webp" alt="">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="fotos/control.jpg" alt="">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="/fotos/conten.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+        <section class="clientes contenedor">
+            <a name="clients"></a>
+            <h2 class="titulo">CLIENTES</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="fotos/aerolineas.jpg" alt="">
+                    <div class="contenido-texto-card"></div>
+                    <p class="parrafo">Gracias a nuestras credenciales que nos garantizan el acceso a pistas podemos trabajar para aerolineas argentinas como logistica oficial</p>
+                </div>
+            <div class="card">
+                <img src="fotos/waiver.png" alt="">
+                <div class="contenido-texto-card"></div>
+                <p class="parrafo"> Con nuestras unidades de todo tipo le realizamos servicios de contenedores y cargas sueltas a una de las logisticas internacionales mas grandes como es Waiver</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros Servicios </h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="fotos/camiones.webp" alt="">
+                        <h3>TRANSPORTE</h3>
+                        <p>Contamos con todo tipo de unidades para adaptarnos a la necesidad del cliente.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="fotos/almacen.webp" alt="">
+                        <h3>DEPOSITO</h3>
+                        <p>Contamos con un deposito central de 3000m3 con sistema de stock integrado y personal calificado para el manejo de tu mercaderia.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="fotos/gps.jpg" alt="">
+                        <h3>SATELITAL</h3>
+                        <p>Además todas nuestras unidades cuentan con sistema satelital para hacer el seguimiento en vivo de tu carga.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Celular</h4>
+                <p>113333333</p>
+            </div>
+        </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>info@nanana.com.ar</p>
+            </div>
+        </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <p>Sarandi</p>
+                <a name="porque"></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
