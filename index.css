@@ -47,6 +47,7 @@ nav > a{
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    flex-wrap: wrap;
 }
 
 nav > a:hover{
@@ -83,11 +84,13 @@ header .textos-header {
 .contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .imagen-about-us{
-    width: 40%;
-    height: 14em;
+    width: 45%;
+    height: 17em;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -111,6 +114,7 @@ header .textos-header {
     margin-right: 5px;
 }
 
+
 .contenido-textos p{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
@@ -121,11 +125,6 @@ header .textos-header {
     background: gainsboro;
 }
 
-.galeria-port{
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-}
 
 .imagen-port{
     width: 24%;
@@ -146,32 +145,38 @@ flex-wrap: wrap;
 .cards{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 .cards .card{
-    background: grey;
     display: flex;
     width: 46%;
     height: 200px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 black;
 }
 
 .cards .card img{
+    width: 80px;   
+    height: 80px;
+    display: flex;
+}
+
+.cartas{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cartas img{
     width: 100px;   
-    height: 100px;
+    height: 80px;
     object-fit: fill;
-    border: whitesmoke;
-    border-radius: 50%;
-    display: block;
+    display: flex;
 }
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-}
-
 
 .parrafo {
     color: white;
@@ -209,32 +214,219 @@ align-items: center;
     text-align: justify;
 }
 
-footer{
-    background: rgb(95, 89, 89);
-    padding: 30px 0 10px 0;
-    overflow: hidden;
-}
-
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
+.contenedor-galeria{
     margin: auto;
-    padding-bottom: 30px;
-    border-bottom: 2px solid whitesmoke;
-    margin-top: 10px;
+    width: 800px;
+    padding: 30px;
 }
 
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
-.content-foo h4{
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+ul.slider li:first-child {
+    opacity: 1; 
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu{
+  text-align: center;
+  margin: 30px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  padding: 20px;
+  width: 5px;
+  height: 5px;
+  border-radius: 70%;
+  text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 50px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #e39403;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
     text-align: center;
-    color: white;
-    font-weight: 200;
-    border-bottom: 3px solid red;
-    padding-bottom: 5px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 
-.content-foo p{
-    color: white;
-    margin-top: 5px;
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{ 
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
+
+@media screen and (max-width:800px){
+    .cards .cartas{ 
+        width: 30%;
+        padding: 35px 10px;
+        display: inline-block;
+        object-position: 2%;
+        object-fit: contain;
+    }
+}
+
